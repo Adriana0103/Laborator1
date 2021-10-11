@@ -14,7 +14,7 @@ function on_cam_error(err){
 //......................
 
 var constraints={audio: false, video: true};
-navigator.mediaDevices.get.UserMedia(constraints)
+navigator.mediaDevices.getUserMedia(constraints)
 .then(on_cam_succes)
 .catch(on_cam_error);
 
@@ -29,4 +29,5 @@ function capteaza()
 	ctx.drawImage(video, 0, 0, 640, 480);
 }
 //....................
+
 
